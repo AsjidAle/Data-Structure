@@ -1,0 +1,85 @@
+#include <iostream>
+
+using namespace std;
+
+// Node class for stack
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int d) {
+        data = d;
+        next = nullptr;
+    }
+};
+
+// Stack class to handle operations on stack
+class Stack {
+private:
+    Node* top;
+
+public:
+    // Constructor to initialize top as NULL
+    Stack() {
+        top = nullptr;
+    }
+
+    // Function to push a new element onto the stack
+    void push(int new_data) {
+        Node* new_node = new Node(new_data);
+        new_node->next = top;
+        top = new_node;
+    }
+
+    // Function to pop the top element from the stack
+    int pop() {
+        if (top == nullptr) {
+            cout << "Error: stack is empty" << endl;
+            return -1;
+        }
+
+        int popped = top->data;
+        Node* temp = top;
+        top = top->next;
+        delete temp;
+        return popped;
+    }
+
+    // Function to search for an element in the stack
+    Node* search(int key) {
+        Node* current = top;
+        while (current != nullptr) {
+            if (current->data == key) {
+                return current;
+            }
+            current = current->next;
+        }
+        return nullptr;
+    }
+};
+
+// Driver code
+int main() {
+    Stack stack;
+    stack.push(5);
+    stack.push(10);
+    stack.push(15);
+    stack.push(20);
+
+    Node* result = stack.search(15);
+    if (result != nullptr) {
+        cout << "Element found at address " << result << endl;
+    } else {
+        cout << "Element not found" << endl;
+    }
+
+    result = stack.search(25);
+    if (result != nullptr) {
+        cout << "Element found at address " << result << endl;
+    } else {
+        cout << "Element not found" << endl;
+    }
+
+    return 0;
+}
