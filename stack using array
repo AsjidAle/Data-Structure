@@ -1,7 +1,10 @@
 
 #include<iostream>
 //creating own stack by array
+
+for generic type
 template<class T=int>
+
 class stack{
     int size;
     int top;
