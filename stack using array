@@ -2,8 +2,8 @@
 #include<iostream>
 //creating own stack by array
 
-for generic type
-template<class T=int>
+//for Making stack generic
+template<class T>
 
 class stack{
     int size;
