@@ -1,0 +1,53 @@
+
+#include<iostream>
+//creating own stack by array
+template<class T=int>
+class stack{
+    int size;
+    int top;
+    T *pointer=nullptr;
+    public:
+    ~stack(){
+        delete pointer;
+        std::cout<<"dd";
+    }
+    stack(){
+        top=(-1);
+        std::cout<<"Enter size of stack ";
+        std::cin>>size;
+        pointer=new T[size];
+    }
+    bool is_full(){
+        if(top<(size-1)){
+            return 0;
+        }
+        else{
+            return 1;
+        }
+    }
+    void push(T data){
+        if(is_full()==0){
+            top+=1;
+            pointer[top]=data;
+        }
+    }
+    void traverse(){
+        for(int i=top;i>-1;i--){
+            std::cout<<*(pointer+i);
+        }
+    }
+    void pop(){
+        if(top>0){
+            top--;
+        }
+    }
+};
+int main(){
+    stack<int> s1;
+    s1.push(2);
+    s1.push(6);
+    s1.push(5);
+    s1.push(0);
+    s1.traverse();
+    return 0;
+}
