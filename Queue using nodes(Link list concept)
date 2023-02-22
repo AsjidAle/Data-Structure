@@ -18,6 +18,7 @@ public:
 };
 
 // LinkedList class to handle operations on linked list
+
 class LinkedList {
 private:
     Node* head;
