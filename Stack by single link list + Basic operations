@@ -31,6 +31,7 @@ public:
     }
 
     // Function to push a new element onto the stack
+    
     void push(int new_data) {
         Node* new_node = new Node(new_data);
         new_node->next = top;
