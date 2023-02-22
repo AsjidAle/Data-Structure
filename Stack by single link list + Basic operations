@@ -54,6 +54,7 @@ public:
     }
 
     // Function to search for an element in the stack
+    
     Node* search(int key) {
         Node* current = top;
         while (current != nullptr) {
