@@ -1,5 +1,6 @@
 
 #include<iostream>
+
 //creating own stack by array
 
 //for Making stack generic
