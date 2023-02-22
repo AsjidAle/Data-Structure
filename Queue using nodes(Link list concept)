@@ -37,7 +37,8 @@ private:
         if (left->data <= right->data) {
             result = left;
             result->next = mergeLists(left->next, right);
-        } else {
+        } 
+        else {
             result = right;
             result->next = mergeLists(left, right->next);
         }
