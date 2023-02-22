@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// Node class for singly-linked list
+// Node class for linked list
 class Node {
 public:
     int data;
