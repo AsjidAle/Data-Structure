@@ -30,7 +30,8 @@ private:
 
         if (left == nullptr) {
             return right;
-        } else if (right == nullptr) {
+        } 
+        else if (right == nullptr) {
             return left;
         }
 
