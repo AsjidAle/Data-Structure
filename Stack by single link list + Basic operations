@@ -39,6 +39,7 @@ public:
     }
 
     // Function to pop the top element from the stack
+    
     int pop() {
         if (top == nullptr) {
             cout << "Error: stack is empty" << endl;
