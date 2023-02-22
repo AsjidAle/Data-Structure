@@ -18,6 +18,7 @@ public:
 };
 
 // Stack class to handle operations on stack
+
 class Stack {
 private:
     Node* top;
