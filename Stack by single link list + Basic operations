@@ -25,6 +25,7 @@ private:
 
 public:
     // Constructor to initialize top as NULL
+    
     Stack() {
         top = nullptr;
     }
