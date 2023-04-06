@@ -1,2 +1,2 @@
-# Stack
-This repo contain some of work on stack and Queue using different data structures like array, single link list, double link list etc.
+# Data Structure
+This repo contain some of work with tructures like array, single link list, double link list, stack, queue, tree, Hashing etc.
