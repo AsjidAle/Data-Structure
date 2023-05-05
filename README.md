@@ -6,3 +6,4 @@ This repo contain some of work with tructures like array, single link list, doub
 ==>**Stack and queue** for convinent memory usage and operations with it.
 ==>**Tree** for herarical memory usage
 ==>**Hashing** for accessing the data in order of 1--- O(1)).
+==>**Graphs**
